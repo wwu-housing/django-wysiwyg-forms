@@ -1,12 +1,16 @@
 # Python 2.5 compatibility
 from __future__ import with_statement
 
+try:
+    import json
+except ImportError:
+    from django.utils import simplejson as json
+
 from django import forms
 from django.core.exceptions import ImproperlyConfigured
 from django.core.urlresolvers import reverse
 from django.template import Context, Template
 from django.test import TestCase
-from django.utils import simplejson as json
 
 from .exceptions import (ChoiceDoesNotExist, ChoiceAlreadyExists,
                          FieldDoesNotExist, FieldAlreadyExists)
