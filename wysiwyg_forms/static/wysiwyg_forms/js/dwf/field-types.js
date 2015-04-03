@@ -5,6 +5,10 @@ define(function (require, exports, module) {
           widget: "CheckboxInput",
           description: "True or false checkbox" },
 
+        { fieldType: "BooleanField",
+          widget: "RadioSelect",
+          description: "Radio select widget"},
+
         { fieldType: "CharField",
           widget: "TextInput",
           description: "Short text" },
@@ -31,7 +35,7 @@ define(function (require, exports, module) {
           description: "Email" },
 
         { fieldType: "FileField",
-          widget: "FileInput",
+          widget: "ClearableFileInput",
           description: "File Upload" },
 
         { fieldType: "FloatField",
