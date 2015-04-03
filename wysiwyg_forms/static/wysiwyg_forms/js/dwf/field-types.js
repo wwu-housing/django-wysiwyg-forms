@@ -5,6 +5,11 @@ define(function (require, exports, module) {
           widget: "CheckboxInput",
           description: "True or false checkbox" },
 
+        { fieldType: "ChoiceField",
+          widget: "RadioSelect",
+          description: "Radio Select",
+          hasChoices: true },
+
         { fieldType: "CharField",
           widget: "TextInput",
           description: "Short text" },
