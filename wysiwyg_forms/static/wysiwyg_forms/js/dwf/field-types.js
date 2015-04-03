@@ -5,10 +5,6 @@ define(function (require, exports, module) {
           widget: "CheckboxInput",
           description: "True or false checkbox" },
 
-        { fieldType: "BooleanField",
-          widget: "RadioSelect",
-          description: "Radio select widget"},
-
         { fieldType: "CharField",
           widget: "TextInput",
           description: "Short text" },
@@ -43,7 +39,7 @@ define(function (require, exports, module) {
           description: "Number (with or without decimal points)" },
 
         { fieldType: "ImageField",
-          widget: "FileInput",
+          widget: "ClearableFileInput",
           description: "Image upload" },
 
         { fieldType: "IntegerField",

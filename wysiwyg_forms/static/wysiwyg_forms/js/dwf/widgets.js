@@ -40,9 +40,9 @@ define(function (require, exports, module) {
     exports.PasswordInput.prototype = new Input();
     exports.PasswordInput.prototype.inputType = "password";
 
-    exports.FileInput = function () {};
-    exports.FileInput.prototype = new Input();
-    exports.FileInput.prototype.inputType = "file";
+    exports.ClearableFileInput = function () {};
+    exports.ClearableFileInput.prototype = new Input();
+    exports.ClearableFileInput.prototype.inputType = "file";
 
     exports.DateInput = function () {};
     exports.DateInput.prototype = new exports.TextInput();
