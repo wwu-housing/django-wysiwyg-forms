@@ -17,7 +17,7 @@ from .utils import field_type_has_choices
 
 
 class Form(models.Model):
-    slug        = models.SlugField(editable=False)
+    slug        = models.SlugField(editable=False, unique=True)
     name        = models.CharField(max_length=250)
     revision    = models.CharField(max_length=250, editable=False)
     description = models.TextField()
